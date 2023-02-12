@@ -2,14 +2,14 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 
-const id = urlParams.get("id");
+const cat = urlParams.get("cat");
 
-const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
+const url = `https://kea-alt-del.dk/t7/api/products?category=${cat}`;
 
 async function getData() {
-  const response = await fetch("https://kea-alt-del.dk/t7/api/products/");
+  const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
+  console.log(url);
 
   data.forEach(showProduct);
 }
