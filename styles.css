@@ -51,7 +51,7 @@ html {
   text-decoration: none;
   padding: 2em;
   color: white;
-  background-color: var(--cat-background-color);
+  background-color: #bf3d43;
 }
 
 @media screen and (min-width: 800px) {
